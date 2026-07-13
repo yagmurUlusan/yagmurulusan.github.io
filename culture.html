@@ -240,19 +240,19 @@ class Component extends DCLogic {
 
   buildDefault() {
     const imgs = {
-      'stage-opera-1': 'assets/culture/stage-opera-1.webp',
-      'stage-opera-2': 'assets/culture/stage-opera-2.webp',
-      'stage-ballet-1': 'assets/culture/stage-ballet-1.webp',
-      'stage-concert-1': 'assets/culture/stage-concert-1.webp',
-      'stage-concert-2': 'assets/culture/stage-concert-2.webp',
-      'stage-theatre-1': 'assets/culture/stage-theatre-1.webp',
-      'stage-theatre-2': 'assets/culture/stage-theatre-2.webp',
-      'stage-theatre-3': 'assets/culture/stage-theatre-3.webp',
-      'screen-series-1': 'assets/culture/screen-series-1.webp',
-      'screen-series-2': 'assets/culture/screen-series-2.webp',
-      'screen-series-4': 'assets/culture/screen-series-4.webp'
+      'stage-opera-1': 'assets/culture/all/stage-opera-1.webp',
+      'stage-opera-2': 'assets/culture/all/stage-opera-2.webp',
+      'stage-ballet-1': 'assets/culture/all/stage-ballet-1.webp',
+      'stage-concert-1': 'assets/culture/all/stage-concert-1.webp',
+      'stage-concert-2': 'assets/culture/all/stage-concert-2.webp',
+      'stage-theatre-1': 'assets/culture/all/stage-theatre-1.webp',
+      'stage-theatre-2': 'assets/culture/all/stage-theatre-2.webp',
+      'stage-theatre-3': 'assets/culture/all/stage-theatre-3.webp',
+      'screen-series-1': 'assets/culture/all/screen-series-1.webp',
+      'screen-series-2': 'assets/culture/all/screen-series-2.webp',
+      'screen-series-4': 'assets/culture/all/screen-series-4.webp'
     };
-    const m = (id, title, sub) => ({ id, title, sub, img: imgs[id] || `assets/culture/${id}.webp` });
+    const m = (id, title, sub) => ({ id, title, sub, img: imgs[id] || `assets/culture/all/${id}.webp` });
     return {
       opera: [
         m('stage-opera-1', 'Don Giovanni', '2024'),
