@@ -70,7 +70,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px;">
         <sc-for list="{{ opera }}" as="item" hint-placeholder-count="3">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 160px; display: block;" hint-size="100%,160px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 160px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em;">{{ item.title }}</div>
               <div style="font-size: 13px; color: var(--muted, #97737f);">{{ item.sub }}</div>
@@ -89,7 +89,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px;">
         <sc-for list="{{ ballet }}" as="item" hint-placeholder-count="3">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 160px; display: block;" hint-size="100%,160px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 160px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em;">{{ item.title }}</div>
               <div style="font-size: 13px; color: var(--muted, #97737f);">{{ item.sub }}</div>
@@ -108,7 +108,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px;">
         <sc-for list="{{ concert }}" as="item" hint-placeholder-count="3">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 160px; display: block;" hint-size="100%,160px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 160px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em;">{{ item.title }}</div>
               <div style="font-size: 13px; color: var(--muted, #97737f);">{{ item.sub }}</div>
@@ -127,7 +127,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px;">
         <sc-for list="{{ theatre }}" as="item" hint-placeholder-count="3">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 160px; display: block;" hint-size="100%,160px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 160px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em;">{{ item.title }}</div>
               <div style="font-size: 13px; color: var(--muted, #97737f);">{{ item.sub }}</div>
@@ -155,9 +155,9 @@
         <span style="flex: 1; height: 1px; background: var(--border, #ffe0ec);"></span>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;">
-        <sc-for list="{{ film }}" as="item" hint-placeholder-count="4">
+        <sc-for list="{{ film }}" as="item" hint-placeholder-count="0">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 230px; display: block;" hint-size="100%,230px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 230px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em;">{{ item.title }}</div>
               <div style="font-size: 13px; color: var(--muted, #97737f);">{{ item.sub }}</div>
@@ -176,7 +176,7 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px;">
         <sc-for list="{{ series }}" as="item" hint-placeholder-count="4">
           <div style="position: relative; border-radius: 20px; overflow: hidden; background: var(--card, #fff); border: 1px solid var(--border, #ffe0ec); box-shadow: 0 18px 44px -36px var(--glow, rgba(255,126,182,0.55));">
-            <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="{{ item.id }}" shape="rect" fit="cover" placeholder="{{ item.place }}" style="width: 100%; height: 160px; display: block" hint-size="100%,230px"></x-import>
+            <img src="{{ item.img }}" alt="{{ item.title }}" style="width: 100%; height: 160px; display: block; object-fit: cover; background: linear-gradient(135deg, rgba(183,156,255,0.16), rgba(255,126,182,0.16));">
             <div style="padding: 14px 16px;">
               <div style="font-weight: 600; font-size: 16px; color: var(--ink, #3c2630); letter-spacing: -0.01em; text-align: center;">{{ item.title }}</div>
             </div>
@@ -239,14 +239,74 @@ class Component extends DCLogic {
   state = { theme: 'blush', data: this.buildDefault() };
 
   buildDefault() {
-    const m = (id, title, sub) => ({ id, title, sub });
+    const imgs = {
+      'stage-opera-1': 'assets/culture/stage-opera-1.webp',
+      'stage-opera-2': 'assets/culture/stage-opera-2.webp',
+      'stage-ballet-1': 'assets/culture/stage-ballet-1.webp',
+      'stage-concert-1': 'assets/culture/stage-concert-1.webp',
+      'stage-concert-2': 'assets/culture/stage-concert-2.webp',
+      'stage-theatre-1': 'assets/culture/stage-theatre-1.webp',
+      'stage-theatre-2': 'assets/culture/stage-theatre-2.webp',
+      'stage-theatre-3': 'assets/culture/stage-theatre-3.webp',
+      'screen-series-1': 'assets/culture/screen-series-1.webp',
+      'screen-series-2': 'assets/culture/screen-series-2.webp',
+      'screen-series-4': 'assets/culture/screen-series-4.webp'
+    };
+    const m = (id, title, sub) => ({ id, title, sub, img: imgs[id] || `assets/culture/${id}.webp` });
     return {
-      opera:   [m('stage-opera-1', 'Name', 'Venue · Year'), m('stage-opera-2', 'Name', 'Venue · Year'), m('stage-opera-3', 'Name', 'Venue · Year')],
-      ballet:  [m('stage-ballet-1', 'Name', 'Venue · Year'), m('stage-ballet-2', 'Name', 'Venue · Year'), m('stage-ballet-3', 'Name', 'Venue · Year')],
-      concert: [m('stage-concert-1', 'Name', 'Venue · Year'), m('stage-concert-2', 'Name', 'Venue · Year'), m('stage-concert-3', 'Name', 'Venue · Year')],
-      theatre: [m('stage-theatre-1', 'Name', 'Venue · Year'), m('stage-theatre-2', 'Name', 'Venue · Year'), m('stage-theatre-3', 'Name', 'Venue · Year')],
-      film:    [m('screen-film-1', 'Title', 'Director · Year'), m('screen-film-2', 'Title', 'Director · Year'), m('screen-film-3', 'Title', 'Director · Year'), m('screen-film-4', 'Title', 'Director · Year')],
-      series:  [m('screen-series-1', 'Title', 'Seasons · Year'), m('screen-series-2', 'Title', 'Seasons · Year'), m('screen-series-3', 'Title', 'Seasons · Year'), m('screen-series-4', 'Title', 'Seasons · Year')]
+      opera: [
+        m('stage-opera-1', 'Don Giovanni', '2024'),
+        m('stage-opera-2', 'Maometto II', '2024')
+      ],
+      ballet: [
+        m('stage-ballet-1', 'Swan Lake', '2026')
+      ],
+      concert: [
+        m('stage-concert-1', 'Bell Canto Night', ''),
+        m('stage-concert-2', 'Haggard', ''),
+        m('stage-concert-132', 'Jarusalem Quartet', ''),
+        m('stage-concert-133', 'Fazıl Say Dünya Anne', ''),
+        m('stage-concert-135', 'Queenz of Piano', ''),
+        m('stage-concert-136', 'Karsu', '')
+      ],
+      theatre: [
+        m('stage-theatre-1', 'Şahları da Vururlar', ''),
+        m('stage-theatre-3', 'Savaş ve Barış', ''),
+        m('stage-theatre-114', 'Maviydi Bisikletim', ''),
+        m('stage-theatre-115', 'Amadeus', ''),
+        m('stage-theatre-116', 'Yaşamaya Dair', ''),
+        m('stage-theatre-117', '12. Gece', ''),
+        m('stage-theatre-118', 'İki Efendinin Uşağı', ''),
+        m('stage-theatre-119', 'Hırçın Kız', ''),
+        m('stage-theatre-120', 'Gökkuşağının Sonu', ''),
+        m('stage-theatre-121', 'Sabahattin Ali Müzikali', ''),
+        m('stage-theatre-122', 'Tatlı Kaçık', ''),
+        m('stage-theatre-123', 'En Büyük Haber', ''),
+        m('stage-theatre-124', 'Ziyafet Sofrası', ''),
+        m('stage-theatre-125', 'Üç Kağıtçı', ''),
+        m('stage-theatre-126', "Midas'ın Kulakları", ''),
+        m('stage-theatre-127', 'Sacide', ''),
+        m('stage-theatre-128', "Notre Dame'ın Kamburu", ''),
+        m('stage-theatre-130', 'Drakula', '')
+      ],
+      film: [],
+      series: [
+        m('screen-series-1', 'Person of Interest', ''),
+        m('screen-series-2', 'Psych', ''),
+        m('screen-series-4', 'Sherlock Holmes', ''),
+        m('screen-series-101', 'Chuck', ''),
+        m('screen-series-102', 'Young Sheldon', ''),
+        m('screen-series-103', 'The Big Bang Theory', ''),
+        m('screen-series-104', 'Modern Family', ''),
+        m('screen-series-105', 'Younger', ''),
+        m('screen-series-106', 'Mom', ''),
+        m('screen-series-107', 'Trol Hunters', ''),
+        m('screen-series-108', 'The Good Place', ''),
+        m('screen-series-109', 'Two Broke Girls', ''),
+        m('screen-series-110', 'The Man Inside', ''),
+        m('screen-series-111', 'Pushing Daisies', ''),
+        m('screen-series-112', 'Violet Evergarden', '')
+      ]
     };
   }
 
@@ -256,23 +316,8 @@ class Component extends DCLogic {
       const saved = localStorage.getItem('ysu-theme');
       if (saved && this.themes[saved]) this.setState({ theme: saved });
     } catch (e) {}
-    // Keep showing whatever content was already saved previously, but the
-    // page itself no longer offers visitors a way to add or edit entries.
-    try {
-      const raw = localStorage.getItem('ysu-culture');
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        if (parsed && parsed.data && typeof parsed.data === 'object') {
-          const data = {};
-          let ok = true;
-          for (const k in this.meta) {
-            if (!Array.isArray(parsed.data[k])) { ok = false; break; }
-            data[k] = parsed.data[k].map((it) => ({ id: String(it.id), title: it.title || '', sub: it.sub || '' }));
-          }
-          if (ok) this.setState({ data });
-        }
-      }
-    } catch (e) {}
+    // Note: content is baked into buildDefault() now — no localStorage
+    // restore here, so a visitor's browser can never override the real photos.
   }
 
   view(cat) {
@@ -281,7 +326,8 @@ class Component extends DCLogic {
       id: it.id,
       place: m.place,
       title: it.title,
-      sub: it.sub
+      sub: it.sub,
+      img: it.img
     }));
   }
 
